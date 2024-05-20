@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/styles.css">
+    <style>
+        #ID{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form class="div" action="/about" method="post">
+        <input type="number" id="ID" name="ID" value="<%= ID %>">
+        <label for="ism">Ism:</label>
+        <input type="text" id="ism" name="ism" required><br><br>
+        
+        <label for="familiya">Familiya:</label>
+        <input type="text" id="familiya" name="familiya" required><br><br>
+        
+        <label for="yosh">Yosh:</label>
+        <input type="number" id="yosh" name="yosh" required><br><br>
+        
+        <label for="jins">Jins:</label>
+        <select id="jins" name="jins" required>
+            <option value="erkak">Erkak</option>
+            <option value="ayol">Ayol</option>
+        </select><br><br>
+        
+        <input type="submit" value="Yuborish">
+    </form>
+</body>
+</html>

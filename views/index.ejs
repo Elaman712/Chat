@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width: 600px;
+        }
+        li{
+            font-size: 24px;
+            display: block;
+        }
+        a{  
+            color: #111;
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <% if (user) { %>
+            <%= user %>
+            <% } %>
+        <nav>
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/people">people</a></li>
+                <li><a href="/registration">registration</a></li>
+                <li><a href="/about">about</a></li>
+                <li><a href="/login">login</a></li>
+                <li><a href="/chat">chat</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

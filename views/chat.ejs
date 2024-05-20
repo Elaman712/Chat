@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Frame</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="chat-frame">
+    <div class="chat-messages" id="chat-messages">
+      <!-- Здесь будут сообщения -->
+    </div>
+    <div class="chat-input">
+      <input type="text" id="message-input" placeholder="Type your message...">
+      <button onclick="sendMessage()">Send</button>
+      <button onclick="insertEmoji(':scull:')">☠️</button> <!-- Смайлик с якорем -->
+      <button onclick="insertEmoji(':love:')">🥰</button> <!-- Смайлик "Улыбка" -->
+      <button onclick="insertEmoji(':')">💅🏾</button> <!-- Смайлик "Грусть" -->
+    </div>
+  </div>
+  <script src="chat.js"></script>
+</body>
+</html>
